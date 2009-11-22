@@ -2,7 +2,7 @@ class ICB
   require 'socket'
   require 'logger'
 
-  VERSION = "1.0.0"
+  VERSION = "1.0.1"
 
   # Port of Perl's Net::ICB by Dan Sully
 
@@ -16,23 +16,23 @@ class ICB
 
   # Protocol definitions: all nice cleartext.
   DEL        = "\001"  # Packet argument delimiter.
-  M_LOGIN    = 'a'           # login packet 
+  M_LOGIN    = 'a'           # login packet
   M_LOGINOK  = 'a'     # login response
-  M_OPEN     = 'b'     # open msg to group 
+  M_OPEN     = 'b'     # open msg to group
   M_PERSONAL = 'c'     # personal message
-  M_STATUS   = 'd'     # group status update message 
-  M_ERROR    = 'e'     # error message 
-  M_ALERT    = 'f'     # important announcement 
+  M_STATUS   = 'd'     # group status update message
+  M_ERROR    = 'e'     # error message
+  M_ALERT    = 'f'     # important announcement
   M_EXIT     = 'g'     # quit packet from server
-  M_COMMAND  = 'h'     # send a command from user 
-  M_CMDOUT   = 'i'     # output from a command 
-  M_PROTO    = 'j'     # protocol/version information 
-  M_BEEP     = 'k'     # beeps 
+  M_COMMAND  = 'h'     # send a command from user
+  M_CMDOUT   = 'i'     # output from a command
+  M_PROTO    = 'j'     # protocol/version information
+  M_BEEP     = 'k'     # beeps
   M_PING     = 'l'     # ping packet from server
-  M_PONG     = 'm'     # return for ping packet 
+  M_PONG     = 'm'     # return for ping packet
   # Archaic packets: some sort of echo scheme?
-  M_OOPEN    = 'n'     # for own open messages 
-  M_OPERSONAL= 'o'     # for own personal messages 
+  M_OOPEN    = 'n'     # for own open messages
+  M_OPERSONAL= 'o'     # for own personal messages
 
   attr_reader :debug
 

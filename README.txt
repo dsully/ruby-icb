@@ -1,6 +1,6 @@
 = ICB
 
-* http://icb.rubyforge.org
+* http://github.com/dsully/ruby-icb
 
 == DESCRIPTION:
 
@@ -38,7 +38,7 @@ end
 
 (The MIT License)
 
-Copyright (c) 2008 Dan Sully
+Copyright (c) 2008-2009 Dan Sully
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
